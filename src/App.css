@@ -16,3 +16,12 @@
   color: white;
   padding: 0.3125rem;
 }
+
+/* styles for footer */
+.footer{
+  position: absolute;
+  bottom: 0;
+  background-color: skyblue;
+  text-align: center;
+  width: 100%;
+}

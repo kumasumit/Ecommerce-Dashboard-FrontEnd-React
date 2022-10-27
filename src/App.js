@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
           <Route path="/profile" element={<h1>Profile Component</h1>} />
         </Routes>
       </BrowserRouter>
+      {/* since we wont be doing any routing for footer, hence it will be outside BrowserRouter */}
+      <Footer/>
     </div>
   );
 }
