@@ -17,6 +17,28 @@
   padding: 0.3125rem;
 }
 
+/* styles for sign-up form */
+.register{
+  margin-left: 30%;
+}
+
+.inputBox {
+  padding: 7px;
+  display: block;
+  border: 1px solid skyblue;
+  width: 300px;
+  margin: 20px;
+}
+
+.appButton {
+  margin: 20px;
+  width: 150px;
+  padding: 10px;
+  background-color: skyblue;
+  border: solid 1px;
+  cursor: pointer;
+}
+
 /* styles for footer */
 .footer{
   position: absolute;
