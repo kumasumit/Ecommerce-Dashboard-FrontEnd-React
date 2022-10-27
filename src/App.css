@@ -1,6 +1,18 @@
-/* styles for nav-ul nav ul class */
+/* here we are using rem and 1rem = 16px by default unless user changes it */
+/* styles for Navbar*/
 .nav-ul{
   display: flex;
   list-style: none;
   justify-content: space-around;
+  padding: 0.3125rem;
+  margin: 0rem;
+  background-color: skyblue;
+}
+.nav-ul li{
+  padding: 0.625rem;
+}
+.nav-ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.3125rem;
 }
