@@ -21,7 +21,11 @@
 .register{
   margin-left: 30%;
 }
+/* styles for login form */
+.login{
+  margin-left: 30%;
 
+}
 .inputBox {
   padding: 7px;
   display: block;

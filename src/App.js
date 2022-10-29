@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import SignUp from "./components/SignUp";
 import PrivateComponent from "./components/PrivateComponent";
+import Login from "./components/Login";
 function App() {
   return (
     <div className="App">
@@ -25,8 +26,8 @@ function App() {
           {/* both signup and login are public components */}
 
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<h1>login</h1>}/>
-          
+          <Route path="/login" element={<Login/>}/>
+
         </Routes>
       </BrowserRouter>
       {/* since we wont be doing any routing for footer, hence it will be outside BrowserRouter */}
