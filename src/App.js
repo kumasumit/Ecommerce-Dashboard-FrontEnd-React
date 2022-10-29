@@ -6,6 +6,7 @@ import SignUp from "./components/SignUp";
 import PrivateComponent from "./components/PrivateComponent";
 import Login from "./components/Login";
 import AddProduct from "./components/AddProduct";
+import ProductList from "./components/ProductList";
 function App() {
   return (
     <div className="App">
@@ -16,7 +17,7 @@ function App() {
           {/* all private routes will be wrapped around Private Component Wrapper */}
           <Route element={<PrivateComponent/>}>
             {/* all the components that require sign-in/login to access is protected under Private Component */}
-            <Route path="/" element={<h1>Product Component</h1>} />
+            <Route path="/" element={<ProductList/>} />
             <Route path="/add" element={<AddProduct/>} />
             <Route path="/update" element={<h1>Update Product Component</h1>} />
             <Route path="/logout" element={<h1> Logout Component</h1>} />
