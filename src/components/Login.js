@@ -42,8 +42,7 @@ const Login = () => {
         //here data is in form of object, to store the object in localStorage,
         //we first need to convert te object into the string
         localStorage.setItem("user", JSON.stringify(data));
-        navigate("/");
-
+        navigate('/');
     }
 
     return (

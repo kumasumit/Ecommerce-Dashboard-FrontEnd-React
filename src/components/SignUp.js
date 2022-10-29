@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from "react";
 import axios from "axios";
 import { 
-    redirect,
+    
     useNavigate } from "react-router-dom";
 // ask rahul ?
 // when and how redirect and useNavigate is used ?
@@ -46,10 +46,11 @@ const SignUp=()=>{
         });
         let data = result.data;    
         console.log(data);
+        
         //here data is in form of object, to store the object in localStorage,
         //we first need to convert te object into the string
         localStorage.setItem("user", JSON.stringify(data));
-        return redirect("/");
+        navigate('/login');
     }
 
     return(
@@ -69,4 +70,4 @@ const SignUp=()=>{
         </div>
     )
 }
-export default SignUp
+export default SignUp;

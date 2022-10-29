@@ -16,6 +16,33 @@
   color: white;
   padding: 0.3125rem;
 }
+/* styles for right navbar */
+.nav-ul-right{
+  display: flex;
+  list-style: none;
+  flex-direction: row-reverse;
+  padding: 0.3125rem;
+  margin: 0rem;
+  background-color: skyblue;
+}
+.nav-ul-right li{
+  padding: 0.625rem;
+}
+.nav-ul-right li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.3125rem;
+}
+/* styles for image logo */
+
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  float: left;
+  margin-top: 3px;
+  margin-left: 10px;
+}
 
 /* styles for sign-up form */
 .register{
