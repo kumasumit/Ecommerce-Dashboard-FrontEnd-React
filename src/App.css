@@ -45,7 +45,7 @@
 }
 
 /* styles for sign-up form */
-.register{
+.register, .product{
   margin-left: 30%;
 }
 /* styles for login form */
