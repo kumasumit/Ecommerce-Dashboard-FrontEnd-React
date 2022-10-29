@@ -20,7 +20,7 @@ const SignUp=()=>{
     useEffect(() => {
       //get the user in localStorage
       //if it exists means user is signed up we redirect to home page
-      console.log("useEffect called");  
+      console.log("useEffect from signup called");  
       const auth = localStorage.getItem('user');
       if(auth){
         navigate('/');
