@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {useParams} from 'react-router-dom';
+import {useNavigate, useParams} from 'react-router-dom';
 
 const UpdateProduct = () => {
     const [name, setName] = useState('');
@@ -8,13 +8,15 @@ const UpdateProduct = () => {
     const [company, setCompnay] = useState('');
 
     const params = useParams();
-
+    const navigate = useNavigate();
     useEffect(()=>{
         getProductDetails();
     },[])
 
     const getProductDetails = async ()=>{
         console.warn(params)
+        // ask rahul >> ??
+        // convert the fetch request to axios request
         let result = await fetch(`http://localhost:8000/product/${params.id}`);
         result = await result.json();
         console.warn(result)
@@ -23,8 +25,20 @@ const UpdateProduct = () => {
         setCategory(result.category);
         setCompnay(result.company)
     }
+
+    // this function is called when we click on the update button
     const updateProduct = async () => {
-        console.warn(name,price,category,company)
+        let result = await fetch(`http://localhost:8000/product/${params.id}`, {
+            method: 'Put',
+            body: JSON.stringify({ name, price, category, company }),
+            headers: {
+                'Content-Type': 'Application/json'
+            }
+        });
+        result = await result.json();
+        if (result) {
+            navigate('/')
+        }
     }
 
     return (
